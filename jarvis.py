@@ -3,17 +3,16 @@ code by: Arijit panda
 Language used: python
 project name: Voice controlled assistant
 """
-import pyttsx3
+import pyttsx3 #Module to import python text to speech conversation.
 import speech_recognition as sr
-import datetime
-import wikipedia
-import webbrowser
-import os
+import datetime #Module to import date and time
+import wikipedia #Module  to access wiki.
+import webbrowser #Module to access webpages.
+import os #Os module.
 
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
-#print(voices[0].id)
 engine.setProperty('voice',voices[1].id)
 
 
